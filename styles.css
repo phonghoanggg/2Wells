@@ -27,6 +27,12 @@
     gap:20px;
     align-items: center;
 }
+.icon-header a {
+    border: 1px solid #E4E4E7;
+    padding:3px 7px;
+    border-radius: 4px;
+    color: #52525B
+}
 .flag-icon {
     width: 20px;
     height: 15px;
