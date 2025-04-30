@@ -53,6 +53,12 @@
     font-weight: bold;
     color: black;
   }
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .carousel-caption h2 {
+    font-size: 70px;
+  }
   
   /* Responsive cho tablet trở xuống */
   @media (max-width: 768px) {
@@ -64,7 +70,7 @@
     }
   
     .carousel-caption h1 {
-      font-size: 28px !important;
+      font-size: 40px !important;
     }
   
     .carousel-caption h3 {
@@ -72,21 +78,21 @@
     }
   
     .carousel-caption h2 {
-      font-size: 24px !important;
+      font-size: 25px !important;
     }
   }
   
   /* Responsive cho mobile nhỏ */
   @media (max-width: 576px) {
     .carousel-caption {
-      top: 32%;
+      top: 42%;
       left: 33%;
       transform: translate(-50%, -50%);
       padding: 5px;
     }
   
     .carousel-caption h1 {
-      font-size: 22px !important;
+      font-size: 40px !important;
     }
   
     .carousel-caption h3 {
@@ -94,7 +100,7 @@
     }
   
     .carousel-caption h2 {
-      font-size: 20px !important;
+      font-size: 25px !important;
     }
   }
   
@@ -133,27 +139,15 @@
     background-color: red; /* Màu nổi bật cho nút đang được chọn */
     opacity: 1;
 }
-
-
-/* Đối với màn hình nhỏ hơn (tablets) */
-@media (max-width: 992px) {
-    .carousel-item img {
-        height: 400px;
-    }
+.img-fluid-top {
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
 }
-
-/* Đối với điện thoại */
-@media (max-width: 768px) {
-    .carousel-item img {
-        height: 300px;
-    }
-}
-
-/* Đối với màn hình rất nhỏ */
-@media (max-width: 576px) {
-    .carousel-item img {
-        height: 250px;
-    }
+.image-about {
+    max-height: 120px;
+    width: 100%;
+    object-fit:cover;
 }
 .title-left {
     font-size: 48px;
@@ -368,12 +362,12 @@
     .wellbeing-corner .wellbeing-card {
         width: 100%;
         max-width: 100%;
-        bottom: -170px;
+        bottom: -110px;
         left: 50%;
         transform: translateX(-50%);
     }
     .top-footer-wrap {
-        margin-top: 100px !important;
+        margin-top: 40px !important;
     }
 }
   
@@ -453,3 +447,68 @@
     width: 110px;
     object-fit: contain;
   }
+  .top-footer-wrap-item > div {
+    height:100%
+  }
+  /* Đối với màn hình nhỏ hơn (tablets) */
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+/* Đối với điện thoại */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    .img-fluid-top {
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+    }
+    .image-about {
+        max-height: 200px;
+        height:200px;
+        width: 100%;
+        margin-bottom: 10px;   
+    }
+    .product-card img {
+        max-height: 350px;
+        width: 100%;
+        object-fit:contain;
+    }
+    .title-left {
+        font-size: 35px;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+    .carousel-indicators-product {
+        bottom: -4% !important
+    }
+    .wellbeing-image {
+        max-height: 300px;
+        height:300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .product-card-our {
+        padding:0
+    }
+    .top-footer-wrap-item {
+        padding:0 12px !important;
+    }
+}
+
+/* Đối với màn hình rất nhỏ */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    .img-fluid-top {
+        height: 120px;
+        width: 120px;
+        object-fit: contain;
+    }
+}
