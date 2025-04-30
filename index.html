@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./image/logoFooter.png"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WELLBEING CORNER</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                        <form class="icon-header d-flex">
+                            <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                            <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+                            <a class="nav-link" href="#"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png"
+                                    alt="VN" class="flag-icon">
+                                <span class="flag-icon-vn">VN</span>
+                                </a>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators (Hình tròn nhỏ) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <!-- Nội dung Slide -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/silde5.jpg" class="d-block w-100" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide-top.jpg" class="d-block w-100" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/slide-top2.jpg" class="d-block w-100" alt="Image 3">
+                </div>
+                <div class="carousel-caption d-flex flex-column align-items-start">
+                    <h2 class="text-uppercase fw-bold fs-1 fs-md-1 fs-sm-2">HEALTH</h2>
+                    <h3 class="text-uppercase fw-bold fs-2 fs-md-2 fs-sm-4">STARTING FROM</h3>
+                    <h1 class="text-uppercase text-banner fw-bold fs-1 fs-md-2 fs-sm-3">NATURE</h1>
+                    <a href="#" class="btn btn-danger mt-3">LEARN MORE</a>
+                  </div>
+                  
+            </div>
+        </div>
+        <!-- About us -->
+        <div class="container py-5">
+            <!-- About Us -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-3 text-center">
+                    <img src="./image/logo-content.png" alt="Logo" class="img-fluid"
+                        style="height: 250px; width: 250px;object-fit:containn;">
+                </div>
+                <div class="col-md-9">
+                    <h2 class="fw-bold">ABOUT US</h2>
+                    <img src="./image/about1.png" alt="Logo" class="img-fluid" style="max-height: 120px; width: 100%;">
+                    <p>
+                        Whatever life throws your way, 2WELLS's team of qualified healthcare advisors are here to
+                        support your general
+                        health and wellbeing needs.
+                    </p>
+                    <p>
+                        Book a wellness chat to discuss a range of topics, including: Health and vitality, digestion,
+                        sleep and mood and
+                        wellbeing ... and more!
+                    </p>
+                    <a href="#" class="read-more text-decoration-underline">Read more</a>
+                </div>
+            </div>
+
+            <!-- Nature's Formula -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="title-left">NATURE’S FORMULA FOR EVERYDAY WELLBEING</div>
+                </div>
+
+                <!-- Product Cards -->
+                <div class="col-md-9">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="product-card">
+                                <img src="./image/daily1.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="product-card">
+                                <img src="./image/daily2.png" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Products -->
+        <div class="product-wrap">
+            <div class="container py-5">
+                <h2 class="section-title">
+                    <span>OUR PRODUCT</span>
+                </h2>
+
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="product-card-our">
+                                        <div class=product-card-our-img>
+                                            <img src="./image/product1.png" class="img-fluid" alt="Omega-3">
+                                        </div>
+                                        <div class="product-name">OMEGA-3 PLUS</div>
+                                        <div class="product-price">678.000 VND
+                                            <button class="btn btn-detail">DETAIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-card-our">
+                                        <div class=product-card-our-img>
+                                            <img src="./image/product1.png" class="img-fluid" alt="Omega-3">
+                                        </div>
+                                        <div class="product-name">OMEGA-3 PLUS</div>
+                                        <div class="product-price">678.000 VND
+                                            <button class="btn btn-detail">DETAIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-card-our">
+                                        <div class=product-card-our-img>
+                                            <img src="./image/product1.png" class="img-fluid" alt="Omega-3">
+                                        </div>
+                                        <div class="product-name">OMEGA-3 PLUS</div>
+                                        <div class="product-price">678.000 VND
+                                            <button class="btn btn-detail">DETAIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="row g-3">
+                                <div class="col-md-4">
+                                    <div class="product-card-our">
+                                        <div class=product-card-our-img>
+                                            <img src="./image/product2.png" class="img-fluid" alt="Omega-3">
+                                        </div>
+                                        <div class="product-name">OMEGA-3 PLUS</div>
+                                        <div class="product-price">678.000 VND
+                                            <button class="btn btn-detail">DETAIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-card-our">
+                                        <div class=product-card-our-img>
+                                            <img src="./image/product2.png" class="img-fluid" alt="Omega-3">
+                                        </div>
+                                        <div class="product-name">OMEGA-3 PLUS</div>
+                                        <div class="product-price">678.000 VND
+                                            <button class="btn btn-detail">DETAIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-card-our">
+                                        <div class=product-card-our-img>
+                                            <img src="./image/product2.png" class="img-fluid" alt="Omega-3">
+                                        </div>
+                                        <div class="product-name">OMEGA-3 PLUS</div>
+                                        <div class="product-price">678.000 VND
+                                            <button class="btn btn-detail">DETAIL</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dấu chấm -->
+                    <div class="carousel-indicators carousel-indicators-product mt-8">
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- why choose -->
+        <div class="container py-5 text-center">
+            <h2 class="why-title mb-3">
+                WHY CHOOSE <span>2WELLS</span> ?
+            </h2>
+            <p class="why-desc mb-5">
+                2WELLS is your trusty sidekick for whatever life throws at you. For over 50 years, we’ve been developing
+                premium formulas, backed by science or traditional evidence, to help you navigate through life’s
+                challenges. Because ready or not, Here Life Comes.
+            </p>
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <div class="why-item">
+                        <img src="./image/why1.png" class="mb-3" alt="Clean Formulations">
+                        <h5 class="fw-bold">CLEAN <br /> FORMULATIONS</h5>
+                        <p>Made with natural <br /> Ingredients</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-item">
+                        <img src="./image/why2.png" class="mb-3" alt="Scientifically Tested">
+                        <h5 class="fw-bold">SCIENTIFICALLY <br /> TESTED</h5>
+                        <p>Ensuring quality and <br />effectiveness</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-item">
+                        <img src="./image//why3.png" class="mb-3" alt="Research Backed">
+                        <h5 class="fw-bold">RESEARCH <br />BACKED</h5>
+                        <p>Guided by the latest health<br /> studies</p>
+                    </div>
+                </div>
+            </div>
+            <div class="join-us p-4 rounded d-flex flex-wrap align-items-end justify-content-end">
+                <div class="d-flex align-items-center flex-grow-1 mb-3 mb-md-0">
+                    <img src="./image/joinus.png" alt="Join Us Icon" class="me-3" style="height:60px;">
+                    <div>
+                        <h5 class="fw-bold mb-1 text-start">JOIN US !</h5>
+                        <p class="mb-0 text-start">Be first to hear about our exclusive promotions, wellness
+                            tips,<br>and the latest innovative product launches.</p>
+                    </div>
+                </div>
+                <div class="form-us" onsubmit="return false;">
+                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-danger">SIGN UP</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-wellbeing">
+            <!-- Wellbeing -->
+            <div class="container py-5 wellbeing-corner">
+                <h2 class="text-center fw-bold mb-4">
+                    WELLBEING CORNER
+                    <div class="underline mx-auto mt-2"></div>
+                </h2>
+                <div class="position-relative">
+                    <img src="./image/wellbeing2.png" alt="Supplements Banner" class="img-fluid rounded">
+
+                    <div class="wellbeing-card p-4 shadow rounded position-absolute start-50 translate-middle-x">
+                        <h6 class="fw-bold text-center mb-3">
+                            FIND IT HARD TO SWALLOW PILLS AND OTHER FORMS OF SUPPLEMENTS?
+                        </h6>
+                        <p class="text-center mb-3">
+                            Discover the different types of supplements, including smart melts, in the latest 2WELLS
+                            blog.
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-danger">READ NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container top-footer-wrap py-5 blog-section">
+                <div class="row g-4">
+                    <div class="col-md-4 pe-4 mt-5">
+                        <div class="blog-card shadow-sm rounded">
+                            <img src="./image/topFoot4.png" class="img-fluid rounded-top w-100" alt="Yoga by the lake">
+                            <div class="p-3">
+                                <h6 class="fw-bold">HOW TO CHECK YOUR HEALTH ACCORDING TO YOUR TONGUE</h6>
+                                <p class="text-muted mb-2">For over 50 years, we’ve been developing premium formulas,
+                                    backed by
+                                    science or traditi...</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 px-4 mt-5">
+                        <div class="blog-card shadow-sm rounded">
+                            <img src="./image/topFoot4.png" class="img-fluid rounded-top w-100" alt="Yoga by the lake">
+                            <div class="p-3">
+                                <h6 class="fw-bold">HOW TO CHECK YOUR HEALTH ACCORDING TO YOUR TONGUE</h6>
+                                <p class="text-muted mb-2">For over 50 years, we’ve been developing premium formulas,
+                                    backed by
+                                    science or traditi...</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ps-4 mt-5">
+                        <div class="blog-card shadow-sm rounded">
+                            <img src="./image/topFoot4.png" class="img-fluid rounded-top w-100" alt="Yoga by the lake">
+                            <div class="p-3">
+                                <h6 class="fw-bold">HOW TO CHECK YOUR HEALTH ACCORDING TO YOUR TONGUE</h6>
+                                <p class="text-muted mb-2">For over 50 years, we’ve been developing premium formulas,
+                                    backed by
+                                    science or traditi...</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer text-white py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Logo & Address -->
+                    <div class="col-md-4">
+                        <img src="./image/logoFooter.png" alt="2Wells logo" style="height: 50px;" class="mb-3">
+                        <p>Manufactured by Alpha Laboratories (NZ) Ltd<br>
+                            48 Crooks Road, Auckland 2013, New Zealand</p>
+                        <p>Registered in Vietnam by HealthSK Ltd Company<br>
+                            10 Floor, Zodiac Building, Duy Tan Street, Dich Vong Hau Ward, Cau Giay District, Hanoi,
+                            Vietnam</p>
+                    </div>
+
+                    <!-- About & Help -->
+                    <div class="col-md-4">
+                        <h6>About</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50">Our History</a></li>
+                            <li><a href="#" class="text-white-50">The Science of Swisse</a></li>
+                            <li><a href="#" class="text-white-50">Our Impact</a></li>
+                            <li><a href="#" class="text-white-50">Community Partnerships</a></li>
+                            <li><a href="#" class="text-white-50">Swisse Ambassadors</a></li>
+                        </ul>
+                        <h6 class="mt-3">Help</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50">Contact Us</a></li>
+                            <li><a href="#" class="text-white-50">FAQs</a></li>
+                            <li><a href="#" class="text-white-50">Shipping & Returns</a></li>
+                            <li><a href="#" class="text-white-50">Privacy</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social & Certifications -->
+                    <div class="col-md-4 text-center text-md-start">
+                        <h6>Follow us</h6>
+                        <div class="d-flex gap-3 mb-2">
+                            <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-white fs-4 me-3"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="text-white fs-4"><i class="bi bi-shop"></i></a>
+                        </div>
+                        <hr class="text-white-50">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="small">Certified Product</span>
+                            <span class="small">Made in New Zealand</span>
+                        </div>
+                        <div class="image-footer d-flex justify-content-between mt-3">
+                            <img src="./image/GMP3.png" alt="GMP Certified">
+                            <img src="./image/map3.png" alt="Made in NZ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

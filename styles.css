@@ -1,0 +1,455 @@
+/* styles.css */
+.navbar-brand {
+    background-color: #b22222;
+    color: white;
+    font-weight: bold;
+    padding:0;
+    border-radius: 10px;
+    margin-right: 55px;
+}
+.navbar-brand img {
+    width: 164px;
+    height: 60px;
+    padding:0
+}
+.nav-item {
+    padding: 15px 20px !important
+}
+.nav-item a {
+    font-size: 20px;
+}
+.nav-link.active {
+    border-bottom: 2px solid #b22222;
+    font-weight: bold;
+}
+.icon-header {
+    display:flex;
+    gap:20px;
+    align-items: center;
+}
+.flag-icon {
+    width: 20px;
+    height: 15px;
+}
+.flag-icon-vn {
+    margin-left: 2px;
+}
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .carousel-caption h1,
+  .carousel-caption h3,
+  .carousel-caption h2 {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Responsive cho tablet trở xuống */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      top: 32%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 28px !important;
+    }
+  
+    .carousel-caption h3 {
+      font-size: 20px !important;
+    }
+  
+    .carousel-caption h2 {
+      font-size: 24px !important;
+    }
+  }
+  
+  /* Responsive cho mobile nhỏ */
+  @media (max-width: 576px) {
+    .carousel-caption {
+      top: 32%;
+      left: 33%;
+      transform: translate(-50%, -50%);
+      padding: 5px;
+    }
+  
+    .carousel-caption h1 {
+      font-size: 22px !important;
+    }
+  
+    .carousel-caption h3 {
+      font-size: 16px !important;
+    }
+  
+    .carousel-caption h2 {
+      font-size: 20px !important;
+    }
+  }
+  
+.text-banner {
+    font-size: 6rem !important;
+    font-weight: 900;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Arial";
+  }
+.btn-danger {
+    background-color: #b22222;
+    border: none;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-indicators button {
+    width: 12px !important; 
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    margin: 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.carousel-indicators .active {
+    background-color: red; /* Màu nổi bật cho nút đang được chọn */
+    opacity: 1;
+}
+
+
+/* Đối với màn hình nhỏ hơn (tablets) */
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 400px;
+    }
+}
+
+/* Đối với điện thoại */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+/* Đối với màn hình rất nhỏ */
+@media (max-width: 576px) {
+    .carousel-item img {
+        height: 250px;
+    }
+}
+.title-left {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.2;
+  }
+
+  .product-card {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product-card.blue {
+    background-color: #007bff;
+  }
+
+  .product-card.orange {
+    background-color: #f39c12;
+  }
+
+  .product-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .product-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .read-more {
+    display:flex;
+    justify-content: end;
+    width:100%;
+    font-size: 14px;
+    font-weight: 500;
+    color:black;
+    font-style: italic;
+  }
+  .product-wrap {
+    background-color: #F7F7F8;
+  }
+  .product-card-our {
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+  }
+  .product-card-our-img {
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+  }
+  .product-card-our img {
+    max-height: 388px;
+    padding: 8px 0
+  }
+
+  .new-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .product-name {
+    font-weight: 700;
+    margin: 10px 0 5px;
+  }
+
+  .product-price {
+    color: #c0392b;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-detail {
+    background: #c0392b;
+    color: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    background: linear-gradient(to right, #f39c12 50%, #3498db 50%);
+    margin: 14px auto 0;
+    border-radius: 2px;
+  }
+  
+
+  .section-title span {
+    padding-bottom: 6px;
+    margin-right: 8px;
+  }
+  .why-title {
+    font-weight: 900;
+    font-size: 36px;
+  }
+  
+  .why-title span {
+    color: #c0392b;
+    font-weight: 900;
+  }
+  
+  .why-desc {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .why-item p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555;
+  }
+  .why-item img {
+    width:95px;
+    height: 95px;
+    object-fit: contain;
+  }
+  
+  .why-item h5 {
+    margin-bottom: 6px;
+  }
+  
+  .why-title::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    background: linear-gradient(to right, #f39c12 50%, #3498db 50%);
+    margin: 14px auto 0;
+    border-radius: 2px;
+  }
+  .join-us {
+    background-color: #f8f8f9;
+  }
+  
+  .join-us p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .join-us .btn-danger {
+    background-color: #b32822;
+    border-color: #b32822;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .join-us .btn-danger:hover {
+    background-color: #a11e1b;
+    border-color: #a11e1b;
+  }
+  .form-us {
+    display:flex !important;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;;
+    width:40%
+  }
+  .form-us input {
+    width:100%
+  }
+  .form-us button {
+    width:100px;
+    margin-top: 16px
+  }
+  .carousel-indicators-product {
+    bottom: -6% !important
+  }
+  .wellbeing-corner .underline {
+    height: 4px;
+    width: 90px;
+    background: linear-gradient(to right, #f7c340 0%, #f7c340 45%, #4db1e2 45%, #4db1e2 100%);
+  }
+  
+  .wellbeing-corner .wellbeing-card {
+    background-color: #ffffff;
+    max-width: 800px;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* Đối với điện thoại */
+@media (max-width: 768px) { 
+    .wellbeing-corner .wellbeing-card {
+        width: 100%;
+        max-width: 100%;
+        bottom: -170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .top-footer-wrap {
+        margin-top: 100px !important;
+    }
+}
+  
+  .wellbeing-corner .wellbeing-card img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .wellbeing-corner .btn-danger {
+    background-color: #b32822;
+    border-color: #b32822;
+    padding: 8px 20px;
+  }
+  
+  .wellbeing-corner .btn-danger:hover {
+    background-color: #a11e1b;
+    border-color: #a11e1b;
+}
+  
+  .wellbeing-corner .btn-danger {
+    background-color: #b32822;
+    border-color: #b32822;
+    padding: 8px 20px;
+  }
+  
+  .wellbeing-corner .btn-danger:hover {
+    background-color: #a11e1b;
+    border-color: #a11e1b;
+  }
+  .blog-card {
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .blog-card img {
+    max-height: 334px;
+    object-fit: cover;
+  }
+  
+  .blog-card .read-more {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .blog-card .read-more:hover {
+    color: #b32822;
+  }
+  .wrap-wellbeing {
+    background-color: #F7F7F8;
+  }
+  .footer {
+    background-color: #1B1B1B;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .footer hr {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+  .image-footer img {
+    height:90px;
+    width: 110px;
+    object-fit: contain;
+  }
